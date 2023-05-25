@@ -1,0 +1,44 @@
+		footer{
+			width: 100%;
+			height: 10vh; 
+			margin-top: 10px; 
+			display: flex;
+			justify-content: center; 
+			align-items: center;
+			position: relative; 
+		}
+		footer a{
+			width: 8%;
+			font-weight: normal;
+			text-align: center;
+			font-size: 80%; 
+		}
+		#logo{
+			position: absolute;
+			right: 50px;
+			width: 15%; 
+			font-size: 130%;
+			font-family: 'Nixie One', cursive;
+			color: black; 
+		}
+		@media only screen and (max-width: 1000px){
+
+			footer{
+				flex-wrap: wrap;
+				align-items: space-around;
+				height: 15vh;
+
+			}
+			footer a{
+				width: 25%;
+				font-size: 75%; 
+			}
+			#tos{
+				width: 90%;
+			}
+			#logo{
+				position: static;
+				width: 70%;
+				font-size: 90%;
+			}
+		}

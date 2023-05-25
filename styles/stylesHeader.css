@@ -1,0 +1,60 @@
+	header{
+		width: 100%;
+		padding-left: 20%; 
+	}
+	nav{
+		width: 65%;
+		height: 25px;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 5%;
+	}
+	h1{
+		font-family: 'Nixie One', cursive; 
+		font-size: 300%; 
+		text-align: left;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	header a{
+		color: black;
+	}
+	a{
+		text-decoration: none;
+		font-family: Arial;
+		font-weight: bold;
+		color: blue;
+	}
+	.navigation{
+		width: 7%;
+		margin-top: 5px;
+		display: flex;
+		justify-content: center;
+	}
+	.navigation:hover a{
+		border-bottom: solid blue 1px;
+	}
+	@media only screen and (max-width: 1000px){
+
+	header{
+		padding: 0;
+	}
+	h1{
+		font-size: 120%;
+		text-align: center;
+	}
+	nav{
+		width: 100%;
+		margin-top: 10px;
+		padding-left: 0;
+		font-size: 80%;
+		justify-content: center;
+	}
+	.navigation{
+		width: 20%; 
+		font-size: 100%;
+	}
+	a{
+		font-weight: normal; 
+	}
+}
