@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles/stylesHeader.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesFooter.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesContact.css">
+	<link rel="shortcut icon" type="image/png" href="image/favicon.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+
+	<title>VerifiedRandom - Contact</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<header>
+		<a href="index.php"><h1>VerifiedRandom.org</h1></a>
+	</header>
+	<nav>
+		<div class="navigation">
+			<a href="index.php">Home</a>
+		</div>
+		<div class="navigation">
+			<a href="verify.php">Verify</a>
+		</div>
+		<div class="navigation">
+			<a href="#">Contact</a>
+		</div>
+		<div class="navigation">
+			<a href="about.html">About</a>
+		</div>
+	</nav>
+	<h1 id="title">Write to us</h1>
+	<div id="wrapper">
+		<form class="contact-form" name="mailForm" action="contactForm.php" onsubmit="return validation()" method="post">
+			<input type="text" name="name" placeholder="Full Name" required><br><br>
+			<input type="text" name="mail" placeholder="Your E-mail Address" required><br><br>
+			<input type="text" name="subject" placeholder="Subject"><br><br>
+			<textarea name="message" placeholder="Message"></textarea><br><br>
+			<button type="submit" name="submit">Send</button>
+		</form>
+	</div>
+	<footer>
+		<a href="index.php">Home</a>
+		<a href="verify.php">Verify</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+		<a href="terms.html" id="tos">Terms of Service</a>
+		<a href="index.php" id="logo">VerifiedRandom.org</a>
+	</footer>
+	<script>
+		function validation(){
+			var name = document.forms["mailForm"]["name"].value;
+			var emailAddress = document.forms["mailForm"]["mail"].value;			
+
+			if(name == ""){
+				getErrorInfoName.style.color = "red"; 
+				getErrorInfoName.innerHTML = "Required";
+
+				return false;
+			}
+			if(emailAddress == ""){
+				getErrorInfoMail.style.color = "red";
+				getErrorInfoMail.innerHTML = "Required";
+
+				return false; 
+			}
+		}
+	</script>
+</body>
+</html>
